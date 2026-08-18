@@ -1,0 +1,46 @@
+.format-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.input-container, .output-container {
+  flex: 1;
+}
+
+.input {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.output {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.title {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.subtitle {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
