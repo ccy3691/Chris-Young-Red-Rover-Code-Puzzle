@@ -19,7 +19,7 @@ function App() {
     <>
       <h2 className="title">Red Rover Code Puzzle</h2>
       <p className="subtitle">Whiteboard of my planning and thought process. click <a href={whiteboardImage} target="_blank" rel="noopener noreferrer">HERE</a></p>
-      <p className="subtitle"><a href="https://github.com/ccy3691/Red-Rover-Code-Puzzle-Chris-Young" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+      <p className="subtitle"><a href="https://github.com/ccy3691/Chris-Young-Red-Rover-Code-Puzzle" target="_blank" rel="noopener noreferrer">GitHub</a></p>
       <div className="format-container">
         <label htmlFor="format">Output Format:</label>
         <select
