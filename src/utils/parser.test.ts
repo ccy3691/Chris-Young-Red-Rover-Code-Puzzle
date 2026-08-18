@@ -48,6 +48,10 @@ describe("formatInput", () => {
     expect(() => formatInput("(a))", 0)).toThrow("Mismatched parentheses in input");
   });
 
+  it("throws exception when there not enough closing parentheses", () => {
+    expect(() => formatInput("(a(b)", 0)).toThrow("Mismatched parentheses in input");
+  });
+
   it("simple case: no children", () => {
     expect(formatInput("(id, name)", 0)).toBe("- id\n- name");
   });

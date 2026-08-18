@@ -31,6 +31,11 @@ function tokenize(str: string): string[] {
       part += char;
     }
   }
+
+  if (level !== 0) {
+    throw new Error("Mismatched parentheses in input");
+  }
+
   if (part.trim()) {
     tokens.push(part.trim());
   }
