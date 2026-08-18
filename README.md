@@ -7,5 +7,5 @@ To Run:
   2. npm run dev (using node lts)
 
 To Test:
-  1. npi i (if haven't already)
+  1. npm i (if haven't already)
   2. npm run test (using vite test)

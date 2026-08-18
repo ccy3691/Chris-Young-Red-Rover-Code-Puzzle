@@ -44,11 +44,19 @@ describe("formatInput", () => {
     expect(() => formatInput("id, name", 0)).toThrow("Input must start and end with parentheses");
   });
 
+  it("throws exception when there are too many parentheses", () => {
+    expect(() => formatInput("(a))", 0)).toThrow("Mismatched parentheses in input");
+  });
+
   it("simple case: no children", () => {
     expect(formatInput("(id, name)", 0)).toBe("- id\n- name");
   });
 
   it("complex case: multi-level children", () => {
     expect(formatInput("(a(b(c(d))))", 0)).toBe("- a\n  - b\n    - c\n      - d");
+  });
+
+  it("should skip empty children", () => {
+    expect(formatInput("(a,,b)", 0)).toBe("- a\n- b");
   });
 });

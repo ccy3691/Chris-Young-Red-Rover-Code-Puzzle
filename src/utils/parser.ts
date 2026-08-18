@@ -77,6 +77,9 @@ function toOutput(nodes: Node[], indent = ""): string {
   const lines: string[] = [];
 
   for (const node of nodes) {
+    if(!node.id){
+      continue;
+    }
     lines.push(`${indent}- ${node.id}`);
     if (node.children) {
       lines.push(toOutput(node.children, indent + "  "));
